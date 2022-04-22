@@ -5,20 +5,22 @@ import * as ImIcons from "react-icons/im";
 
 const App = () => {
 
-	let db = new Localbase('db');
-	db.config.debug = false;
-
 	const [todos, setTodos] = useState(null);
 	const [processing, setProcessing] = useState(false);
 	const [titleInput, setTitleInput] = useState("");
 
 	useEffect(() => {
+		let db = new Localbase('db');
+		db.config.debug = false;
+
 		db.collection('react_todo').orderBy('date_added', 'desc').get().then(todos => {
 			if (todos.length!==0){setTodos(todos)}else{setTodos(null)}
 		});
 	}, [])
 
 	const reloadTodo = () => {
+		let db = new Localbase('db');
+		db.config.debug = false;
 		db.collection('react_todo').orderBy('date_added', 'desc').get().then(todos => {
 			if (todos.length!==0){setTodos(todos)}else{setTodos(null)}
 		});
@@ -26,6 +28,8 @@ const App = () => {
 
 	const addTodo = (e) => {
 		e.preventDefault();
+		let db = new Localbase('db');
+		db.config.debug = false;
 		setProcessing(true);
 		db.collection('react_todo').add({
 			title: titleInput,

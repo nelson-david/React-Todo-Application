@@ -3,9 +3,9 @@ import * as BsIcons from "react-icons/bs";
 
 const ListComponent = ({todo, reloadTodo}) => {
 
-	let db = new Localbase('db');
-
 	const removeTodo = (e) => {
+		let db = new Localbase('db');
+		db.config.debug = false;
 		db.collection('react_todo').doc({ random_id:todo.random_id }).delete().then(() => {
 			reloadTodo();
 		})
