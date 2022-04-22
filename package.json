@@ -1,0 +1,67 @@
+{
+  "name": "react-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "js-cookie": "^2.2.1",
+    "json-query": "^2.2.2",
+    "localbase": "^0.7.5",
+    "mdbootstrap": "^4.19.2",
+    "mdbreact": "^5.0.2",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-contexify": "^5.0.0",
+    "react-contextmenu": "^2.14.0",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-image": "^4.0.3",
+    "react-image-webp": "^0.7.0",
+    "react-indiana-drag-scroll": "^2.0.1",
+    "react-jsx-context-menu": "^1.0.9",
+    "react-moment": "^1.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-router-scroll-to-top": "^1.1.2",
+    "react-scripts": "4.0.3",
+    "react-search-input": "^0.11.3",
+    "react-tagsinput": "^3.19.0",
+    "react-text-loop": "^2.3.0",
+    "react-text-transition": "^1.3.0",
+    "react-top-loading-bar": "^2.0.1",
+    "react-video-js-player": "^1.1.1",
+    "reactjs-media": "^1.5.1",
+    "socket.io-client": "^4.1.2",
+    "socketio": "^1.0.0",
+    "use-voice-recorder": "^1.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
